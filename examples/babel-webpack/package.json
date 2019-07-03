@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Babel webpack example ",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-core": "^6.17.0",
@@ -18,6 +20,8 @@
   "dependencies": {
     "amazon-cognito-identity-js": "^1.5.0",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
-  }
+    "react-dom": "^15.3.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
